@@ -363,7 +363,7 @@ export class AdvancedCameraCardImageUpdatingPlayer
                 // Don't let the URL override the stock image in this case, as
                 // this could create an error loop if that URL subsequently
                 // failed to load.
-                this._forceSafeImage(true);
+                // this._forceSafeImage(true);
               } else if (mode === 'url') {
                 // In url mode, the user likely specified a URL that cannot be
                 // resolved. Show an error message.
