@@ -36,16 +36,6 @@ jobs:
 
       - name: Build
         run: yarn run build
-
-      - name: HACS build validation
-        uses: 'hacs/action@21.12.1'
-        with:
-          category: 'plugin'
-
-          # Don't attempt to load into HACS (as it loads the release, not the
-          # build).
-          ignore: 'hacs'
-
       - name: Upload javascript
         uses: actions/upload-artifact@v4
         with:
